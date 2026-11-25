@@ -59,3 +59,15 @@ Script property EXTRA_ADMINS เป็น JSON object ชื่อผู้ใ�
 
 ## V3.7 A-Level TCAS70
 เพิ่ม 10 รายการ กำหนดการสมัคร สอบรายวัน และประกาศผล อ้างอิง https://mytcas.com/ ตรวจสอบ 25 พ.ย. 2569 ไม่เขียนลงชีต อัปเดต app.js และ sw.js โดยคง config.js เดิม
+
+## V3.8 — เฉพาะวันสอบ / ปุ่มปิดสีแดง
+เก็บเฉพาะช่วงจัดสอบ O-NET ม.3/ม.6, TGAT, TPAT1–5 และ A-Level รายวัน รวม 11 รายการอ้างอิง ไม่รวมวันสมัคร พิมพ์บัตร ประกาศผล เฉลย หรือทบทวนคะแนน ไม่เปลี่ยนข้อมูลที่ผู้ดูแลบันทึกในชีต ปุ่มปิด Admin, รีพอร์ต และรายละเอียดเป็นกากบาทสีแดง อัปเดต index.html, style.css, app.js, sw.js โดยคง config.js เดิมไว้ กำหนดการสอบยึดข้อมูล V3.7 และยังต้องตรวจสอบรอบสอบจริงกับหน่วยงานจัดสอบ
+
+## V3.8.1
+Login no longer takes the global spreadsheet write lock; write operations retain mutual exclusion. Login rate limiting uses best-effort cache counters (not atomic). Deploy Code.gs as a new version; retain existing config.js.
+
+## V3.8.2 Readable Calendar
+อัปเดต app.js, style.css และ sw.js บน GitHub เท่านั้น คง config.js และ Backend เดิม กิจกรรมหลายวันแสดงเป็นแถบต่อเนื่องหนึ่งครั้งต่อสัปดาห์ ชื่อกิจกรรมวันเดียวจำกัดสองบรรทัด แตะเพื่อเปิดรายละเอียด และแตะวันที่เพื่อดูทั้งหมด
+
+## V4.0 App UX
+อัปเดต index.html, style.css, app.js, sw.js พร้อมกันบน GitHub โดยคง config.js และ Code.gs เดิม เมนูด้านล่าง: ปฏิทิน กิจกรรม ภาพรวม รีพอร์ต เพิ่มเติม (ผู้ดูแล/ธีม/รีเฟรช)
