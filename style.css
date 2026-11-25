@@ -97,3 +97,5 @@ main{max-width:1550px;padding:0 20px}.calendar-panel,.event-panel,#timeline55{bo
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 
 @media screen{.role-picker55{display:inline-block;vertical-align:middle}.role-picker55[open]{display:block}.density55{background:var(--soft);color:var(--ink);margin:0 0 0 8px;border-radius:30px;min-height:38px;font-size:12px}.role-picker55[open]+.density55{margin:0 0 8px}.monthweek .day-number{width:auto}.premium-event-open55:hover{background:transparent}}
+
+.edit-head551{display:grid;gap:6px;margin:12px 0}.edit-head551 h3,.edit-head551 p{margin:0}.edit-head551 p{color:var(--muted);font-size:13px}.edit-head551 button{justify-self:start;background:var(--surface);color:var(--ink);border:1px solid var(--line)}.edit-head551 [hidden],#eventForm [hidden]{display:none!important}
