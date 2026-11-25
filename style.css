@@ -99,3 +99,76 @@ main{max-width:1550px;padding:0 20px}.calendar-panel,.event-panel,#timeline55{bo
 @media screen{.role-picker55{display:inline-block;vertical-align:middle}.role-picker55[open]{display:block}.density55{background:var(--soft);color:var(--ink);margin:0 0 0 8px;border-radius:30px;min-height:38px;font-size:12px}.role-picker55[open]+.density55{margin:0 0 8px}.monthweek .day-number{width:auto}.premium-event-open55:hover{background:transparent}}
 
 .edit-head551{display:grid;gap:6px;margin:12px 0}.edit-head551 h3,.edit-head551 p{margin:0}.edit-head551 p{color:var(--muted);font-size:13px}.edit-head551 button{justify-self:start;background:var(--surface);color:var(--ink);border:1px solid var(--line)}.edit-head551 [hidden],#eventForm [hidden]{display:none!important}
+
+/* V5.5.3 */
+#adminMsg:not(:empty){position:static;z-index:auto;margin:8px 0 12px}#adminMsg.success553{color:#15803d;border-color:#86efac;background:#f0fdf4}html[data-theme=night] #adminMsg.success553{color:#bbf7d0;background:#173423;border-color:#356547}.accounts553{display:grid;gap:8px}.account553{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.account553 p{margin:4px 0;color:var(--muted)}.account553 .edit553{background:#dbeafe;color:#1d4ed8}.account-note553{color:var(--muted);font-size:12px}.account-disable553{display:flex;flex-direction:row;align-items:center}.account-disable553 input{min-height:0;width:auto}#accountEdit553{margin:12px 0}#accountEdit553 input{width:100%;min-width:0}
+
+/* V5.5.4: independent admin workspace with responsive grouped navigation */
+@media screen {
+#admin{width:min(440px,94vw);padding:20px;overflow:auto;border-radius:20px}
+#admin>.toolbar{position:relative;top:auto;padding:0 0 14px;margin:0 0 12px;flex-shrink:0}
+#admin>.toolbar h2{text-align:left;font-size:20px;line-height:1.5}
+#admin.admin-signed554[open]{display:flex;flex-direction:column;width:min(1240px,96vw);height:min(900px,92dvh);max-height:92dvh;padding:20px;overflow:hidden}
+#admin.admin-signed554 #editor{display:flex;flex:1;min-height:0;flex-direction:column;overflow:hidden}
+#admin #adminMsg:not(:empty){flex-shrink:0;max-height:90px;overflow:auto;margin:0 0 10px}
+.admin-shell554{display:grid;grid-template-columns:225px minmax(0,1fr);min-height:0;flex:1;gap:0;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.admin-sidebar554{min-width:0;overflow:auto;background:var(--soft);border-right:1px solid var(--line);padding:12px 10px;display:flex;flex-direction:column}
+.admin-menu554{display:none}
+#adminNav554{display:flex;flex-direction:column;align-items:stretch;flex-wrap:nowrap;gap:12px;margin:0;width:100%}
+.admin-group554{display:grid;gap:3px;min-width:0}
+.admin-group554 h4{margin:4px 9px;font-size:11px;font-weight:500;color:var(--muted)}
+#adminNav554 [data-admin-tab],#adminNav554 #logout{display:flex;align-items:center;justify-content:flex-start;gap:9px;text-align:left;color:var(--ink);background:transparent;border:1px solid transparent;box-shadow:none;min-height:40px;border-radius:9px;padding:8px 10px;font-size:13px;font-weight:400;white-space:normal;line-height:1.45;width:100%}
+#adminNav554 svg,.admin-menu554 svg,#adminQuickAdd554 svg{flex-shrink:0;width:18px;height:18px}
+#adminNav554 [data-admin-tab].active{background:var(--accent-soft);border-color:#d4a600;font-weight:500}
+#adminNav554 [data-admin-tab]:hover{background:var(--surface)}
+#adminNav554 [data-admin-tab].active:hover{background:var(--accent-soft)}
+.admin-account554{border-top:1px solid var(--line);padding-top:10px}
+#adminNav554 #logout{color:#b91c1c;background:transparent}
+html[data-theme=night] #adminNav554 #logout{color:#fca5a5}
+.admin-work554{min-width:0;min-height:0;overflow:auto;overscroll-behavior:contain;padding:20px;background:var(--surface);scroll-padding-top:12px}
+.admin-workhead554{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:18px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.admin-workhead554 h3{font-size:22px;font-weight:600;margin:3px 0 0;line-height:1.4}.admin-workhead554 small{font-size:12px;color:var(--muted)}
+#adminQuickAdd554{display:flex;align-items:center;gap:6px;white-space:nowrap}
+.admin-work554 .admin-panel52{margin:0;min-width:0}
+#adminListHeading52{display:none}
+#admin .admin-filter52{gap:8px;grid-template-columns:minmax(0,2fr) minmax(0,1fr) minmax(0,1fr) 72px}
+#admin .admin-filter52>*{min-width:0;width:100%}
+#admin .admin-card52{margin:8px 0;background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:13px}
+#admin .admin-actions52 button{min-height:42px}
+#admin #eventForm{padding:0;border:none;background:transparent;margin:0}
+.admin-formgroup554{padding:14px;border:1px solid var(--line);border-radius:12px;margin:0 0 12px;background:var(--soft)}
+.admin-formgroup554 h4{font-weight:500;font-size:14px;margin:0 0 10px}
+.admin-formgrid554{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 12px}
+.admin-formgrid554 label{min-width:0}.admin-formgrid554 input,.admin-formgrid554 select,.admin-formgrid554 textarea{width:100%;min-width:0}
+.admin-formgrid554 .wide554{grid-column:1/-1}.admin-formactions554{display:flex;gap:8px;flex-wrap:wrap;padding:12px 0;border-top:1px solid var(--line)}
+.admin-formactions554 #clearEventForm{background:var(--soft);color:var(--ink);border:1px solid var(--line)}
+#admin .edit-head551{margin:0 0 14px}#admin .edit-head551 h3{display:none}
+#admin #adminExtra .admin-meta-head52{flex-wrap:wrap}#admin #adminExtra input,#admin #adminExtra select{max-width:100%}
+}
+@media screen and (max-width:850px){
+#admin.admin-signed554[open]{width:calc(100% - 12px);height:94dvh;max-height:94dvh;padding:12px;border-radius:16px}
+#admin>.toolbar h2{font-size:18px}.admin-shell554{display:flex;flex-direction:column;gap:0;border:0;border-radius:0}
+.admin-sidebar554{flex-shrink:0;border:0;border-bottom:1px solid var(--line);padding:0 0 8px;background:var(--surface);overflow:visible}
+.admin-menu554{display:flex;width:100%;align-items:center;gap:8px;background:var(--soft);color:var(--ink);border:1px solid var(--line);font-size:13px;min-height:44px;text-align:left}
+.menu-chevron554{margin-left:auto}.expanded554 .menu-chevron554{transform:rotate(180deg)}
+#adminNav554{display:none;max-height:40dvh;overflow:auto;overscroll-behavior:contain;padding:8px 0;gap:10px}
+.expanded554 #adminNav554{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
+.admin-account554{grid-column:1/-1;padding-top:4px}#adminNav554 [data-admin-tab]{font-size:12px;min-height:44px;padding:7px;gap:6px;background:var(--soft);border:1px solid var(--line)}
+.admin-work554{flex:1;padding:12px 2px 8px}.admin-workhead554{margin-bottom:12px;padding-bottom:10px}.admin-workhead554 h3{font-size:19px}.admin-workhead554 small{font-size:11px}#adminQuickAdd554{font-size:12px;padding:8px}
+#admin .admin-filter52{grid-template-columns:repeat(2,minmax(0,1fr))}#admin .admin-filter52 input{grid-column:1/-1}#admin .admin-card52{padding:10px}
+}
+@media screen and (max-width:480px){.admin-formgrid554{grid-template-columns:1fr}.admin-formgroup554{padding:12px}.admin-workhead554 h3{font-size:17px}.admin-workhead554{gap:5px}.admin-formactions554 #save{flex:1}#adminNav554 [data-admin-tab]{font-size:11.5px}.admin-menu554{min-height:44px}.admin-actions52 button{min-width:0}}
+@media screen {
+#admin>.toolbar #logout{display:flex;align-items:center;gap:6px;min-height:42px;background:var(--soft);color:var(--ink);border:1px solid var(--line);padding:8px 12px;font-size:12px;white-space:nowrap}
+#admin>.toolbar #logout svg{width:18px;height:18px;flex-shrink:0}
+#adminNav554 [data-admin-tab]:not(.active):hover{background:var(--surface);border-color:var(--line)}
+#admin .admin-filter52{grid-template-columns:minmax(0,2fr) minmax(0,1fr) minmax(0,1fr) 100px}
+}
+@media screen and (min-width:851px){#adminNav554{gap:8px}.admin-group554{gap:2px}#adminNav554 [data-admin-tab]{min-height:36px;padding:6px 9px}}
+@media screen and (max-width:850px){
+#admin .admin-filter52{grid-template-columns:repeat(2,minmax(0,1fr))}
+.admin-shell554.menu-open554 .admin-work554{display:none}
+.admin-shell554.menu-open554 .admin-sidebar554{flex:1;min-height:0;border-bottom:0}
+.expanded554 #adminNav554{max-height:none;flex:1;align-content:start;min-height:0}
+}
+@media screen and (max-width:480px){#admin>.toolbar #logout{padding:9px;min-width:40px;justify-content:center}#admin>.toolbar #logout span{display:none}}
