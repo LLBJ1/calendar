@@ -33,3 +33,10 @@ header{padding:22px max(28px,calc((100% - 1480px)/2));background:#17191e;border-
 
 /* Full Thai month names in report dates */
 .report-table .report-date,.report-sheet .report-table .report-date,.report-date-end{white-space:normal;overflow-wrap:anywhere;line-height:1.5;}
+
+/* V3.8: accessible red close controls in all dialogs */
+button.dialog-close[data-close]{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;width:40px;height:40px;min-width:40px;padding:0;border:1px solid #fecaca;border-radius:10px;background:#fef2f2;color:#dc2626;font:600 30px/1 Arial,sans-serif;box-shadow:none;margin-inline-start:auto;cursor:pointer}
+button.dialog-close[data-close]:hover{background:#fee2e2;color:#991b1b;border-color:#fca5a5}
+button.dialog-close[data-close]:focus-visible{outline:2px solid #dc2626;outline-offset:3px}
+#detail>button.dialog-close{display:flex;margin-inline-start:auto;margin-bottom:8px}
+@media print{button.dialog-close[data-close]{display:none!important}}
