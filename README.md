@@ -1,4 +1,4 @@
-# BJ.1 Academic Calendar V3.0
+# BJ.1 Academic Calendar V3
 เว็บปฏิทินภาษาไทย Responsive สำหรับ GitHub Pages + Google Apps Script + Google Sheets
 
 ## ติดตั้งใหม่ / อัปเกรด V2
