@@ -172,3 +172,5 @@ html[data-theme=night] #adminNav554 #logout{color:#fca5a5}
 .expanded554 #adminNav554{max-height:none;flex:1;align-content:start;min-height:0}
 }
 @media screen and (max-width:480px){#admin>.toolbar #logout{padding:9px;min-width:40px;justify-content:center}#admin>.toolbar #logout span{display:none}}
+
+.audience-hint555{display:block;font-size:12px;line-height:1.6;color:var(--muted,#69717c);margin:4px 0 8px;font-weight:400}
